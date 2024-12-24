@@ -1,0 +1,288 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Основной шрифт для текста */
+    background-color: #f0f8ff; /* Светлый фон для контраста */
+    color: #333; /* Цвет текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 20px; /* Отступы для всего тела */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lora', serif; /* Применение более красивого шрифта для заголовков */
+    font-weight: 700; /* Жирный шрифт */
+}
+
+h1 {
+    font-size: 2.5em; /* Размер заголовка 1 */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+h2 {
+    font-size: 2em; /* Размер заголовка 2 */
+    margin-top: 30px; /* Отступ сверху */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+h3 {
+    font-size: 1.5em; /* Размер заголовка 3 */
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+h4 {
+    font-size: 1.2em; /* Размер заголовка 4 */
+    font-weight: 700; /* Жирный шрифт */
+}
+
+p {
+    font-weight: 500; /* Полужирный шрифт для обычного текста */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+ul, ol {
+    margin-left: 20px; /* Отступ для списков */
+}
+
+footer {
+    text-align: center; /* Центрирование текста в подвале */
+    margin-top: 30px; /* Отступ сверху */
+}
+
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.about-section, #risks, #prevention, #resources {
+    background: #D3D3D3;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h4 {
+    font-size: 2em;
+    margin: 0;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007bff;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.resource-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.resource-card {
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.resource-card:hover {
+    transform: scale(1.05);
+}
+
+.resource-card h3 {
+    color: #007bff;
+}
+
+.resource-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.resource-card a:hover {
+    background: #0056b3;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resource-item {
+    animation: fadeIn 0.5s ease forwards;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Фоновый цвет для поддержки, если изображение не загрузится */
+    color: #333;
+    line-height: 1.6;
+    position: relative; /* Для позиционирования псевдоэлемента */
+    overflow: hidden; /* Скрыть переполнение */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('image2.jpg'); /* Укажите путь к вашему изображению */
+    background-size: cover; /* Заполнение всего экрана */
+    background-position: center; /* Центрирование изображения */
+    filter: blur(8px); /* Размытие изображения */
+    z-index: -1; /* Помещаем за контентом */
+}
+
+header {
+    background: rgba(0, 123, 255, 0.8); /* Полупрозрачный фон для заголовка */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lora', serif; /* Применение выбранного шрифта */
+    font-size: 2.5em; /* Размер шрифта */
+    text-align: center; /* Центрирование текста */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+.video-container {
+    display: flex;
+    justify-content: center; /* Центрирует видео по горизонтали */
+    margin-bottom: 20px; /* Отступ между видео и чат-ботом */
+}
+
+.chatbot-container {
+    display: flex;
+    justify-content: center; /* Центрирует чат-бота по горизонтали */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    margin: 0; /* Убирает отступы */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    opacity: 0; /* Начальная непрозрачность */
+    transition: opacity 0.5s ease; /* Плавный переход для непрозрачности */
+}
+
+.carousel-item.active {
+    opacity: 1; /* Полная непрозрачность для активного элемента */
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center; /* Центрируем кнопки */
+    margin-top: 20px; /* Отступ сверху для кнопок */
+}
+
+.carousel-control {
+    background-color: #007bff; /* Цвет фона кнопок */
+    color: white; /* Цвет текста кнопок */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для кнопок */
+    margin: 0 10px; /* Отступ между кнопками */
+}
+
+.carousel-control:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+    transform: translateY(-2px);
+}
